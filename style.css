@@ -1,0 +1,624 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "NarkisClassic-Medium";
+  src: url("./NarkisClassic-Medium.otf");
+}
+
+@font-face {
+  font-family: "Sapir-Medium";
+  src: url("./Sapir-Medium.otf");
+}
+
+@font-face {
+  font-family: "aharoniclm-bold";
+  src: url("./aharoni/aharoniclm-bold-webfont.ttf");
+}
+
+@font-face {
+  font-family: "Ada-Bold";
+  src: url("./Ada-Bold.otf");
+}
+
+@font-face {
+  font-family: "FrankG_\ Regular";
+  src: url("./FrankG_\ Regular.otf");
+}
+
+@font-face {
+  font-family: "Shoken-Light";
+  src: url("./Shoken-Light.otf");
+}
+
+@font-face {
+  font-family: "DavidHadashBiblical-Medium";
+  src: url("./DavidHadashBiblical-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Miriam-Medium";
+  src: url("./Miriam-Medium.otf");
+}
+
+@font-face {
+  font-family: "Margaliot-Medium";
+  src: url("./Margaliot-Medium.otf");
+}
+
+@font-face {
+  font-family: "Haim-Medium";
+  src: url("./Haim-Medium.otf");
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  border: 4px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10 {
+  width: 340px;
+  background-color: black;
+  color: #fff;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover,
+.box7:hover,
+.box8:hover,
+.box9:hover,
+.box10:hover {
+  background-color: white;
+  color: black;
+  animation-play-state: paused;
+}
+
+div {
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  font-size: 25px;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 20px;
+}
+
+.box1 {
+  font-family: "Margaliot-Medium", sans-serif;
+  max-height: 80px;
+  overflow: hidden;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+
+  animation-name: move;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  margin-bottom: 0;
+  margin-top: 0;
+  transition: all 1s ease;
+}
+
+.year1 {
+  display: none;
+}
+
+.box1:hover {
+  padding: 10px;
+  transform: scale(1.2);
+  transform: translateY(20px);
+  background-color: rgb(255, 255, 255, 0.1);
+  .year1 {
+    display: block;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+}
+
+@keyframes move {
+  0% {
+    margin-left: 900px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+.box2 {
+  font-family: "FrankG_\ Regular", sans-serif;
+  max-height: 80px;
+  overflow: hidden;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+
+  animation-name: move2;
+  animation-duration: 20s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 1s ease;
+}
+
+.year2 {
+  display: none;
+}
+
+.box2:hover {
+  padding: 10px;
+  transform: scale(1.2);
+  transform: translateY(20px);
+  background-color: rgb(255, 255, 255, 0.1);
+  .year2 {
+    display: block;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    margin-left: 900px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+.box3 {
+  font-family: "Miriam-Medium", sans-serif;
+
+  max-height: 80px;
+  overflow: hidden;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+
+  animation-name: move3;
+  animation-duration: 30s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 1s ease;
+}
+
+.year3 {
+  display: none;
+}
+
+.box3:hover {
+  padding: 10px;
+  transform: scale(1.2);
+  transform: translateY(20px);
+  background-color: rgb(255, 255, 255, 0.1);
+  .year3 {
+    display: block;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+}
+
+@keyframes move3 {
+  0% {
+    margin-left: 900px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+.box4 {
+  font-family: "DavidHadashBiblical-Medium", sans-serif;
+
+  max-height: 80px;
+  overflow: hidden;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+
+  animation-name: move4;
+  animation-duration: 40s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 1s ease;
+}
+
+.year4 {
+  display: none;
+}
+
+.box4:hover {
+  padding: 10px;
+  transform: scale(1.2);
+  transform: translateY(20px);
+  background-color: rgb(255, 255, 255, 0.1);
+  .year4 {
+    display: block;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+}
+
+@keyframes move4 {
+  0% {
+    margin-left: 900px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+.box5 {
+  font-family: "Shoken-Light", sans-serif;
+
+  max-height: 80px;
+  overflow: hidden;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+
+  animation-name: move5;
+  animation-duration: 50s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 1s ease;
+}
+
+.year5 {
+  display: none;
+}
+
+.box5:hover {
+  padding: 10px;
+  transform: scale(1.2);
+  transform: translateY(20px);
+  background-color: rgb(255, 255, 255, 0.1);
+  .year5 {
+    display: block;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+}
+
+@keyframes move5 {
+  0% {
+    margin-left: 900px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+.box6 {
+  font-family: "Ada-Bold", sans-serif;
+
+  max-height: 80px;
+  overflow: hidden;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+
+  animation-name: move6;
+  animation-duration: 60s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 1s ease;
+}
+
+.year6 {
+  display: none;
+}
+
+.box6:hover {
+  padding: 10px;
+  transform: scale(1.2);
+  transform: translateY(20px);
+  background-color: rgb(255, 255, 255, 0.1);
+  .year6 {
+    display: block;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+}
+
+@keyframes move6 {
+  0% {
+    margin-left: 900px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+.box7 {
+  font-family: "NarkisClassic-Medium", sans-serif;
+
+  max-height: 80px;
+  overflow: hidden;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+
+  animation-name: move7;
+  animation-duration: 70s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 1s ease;
+}
+
+.year7 {
+  display: none;
+}
+
+.box7:hover {
+  padding: 10px;
+  transform: scale(1.2);
+  transform: translateY(20px);
+  background-color: rgb(255, 255, 255, 0.1);
+  .year7 {
+    display: block;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+}
+
+@keyframes move7 {
+  0% {
+    margin-left: 900px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+.box8 {
+  max-height: 80px;
+  overflow: hidden;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+
+  animation-name: move8;
+  animation-duration: 80s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 1s ease;
+}
+
+.year8 {
+  display: none;
+}
+
+.box8:hover {
+  font-family: "Sapir-Medium", sans-serif;
+  padding: 10px;
+  transform: scale(1.2);
+  background-color: rgb(255, 255, 255, 0.1);
+  .year8 {
+    display: block;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+}
+
+@keyframes move8 {
+  0% {
+    margin-left: 900px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+.box9 {
+  font-family: "aharoniclm-bold", sans-serif;
+  max-height: 80px;
+  overflow: hidden;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+
+  animation-name: move9;
+  animation-duration: 90s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  transition: all 1s ease;
+}
+
+.year9 {
+  display: none;
+}
+
+.box9:hover {
+  padding: 10px;
+  transform: scale(1.2);
+  transform: translateY(20px);
+  background-color: rgb(255, 255, 255, 0.1);
+  .year9 {
+    display: block;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+}
+
+@keyframes move9 {
+  0% {
+    margin-left: 900px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+.box10 {
+  font-family: "Haim-Medium", sans-serif;
+
+  max-height: 80px;
+  overflow: hidden;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  animation-name: move10;
+  animation-duration: 100s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  transition: all 1s ease;
+}
+
+.year10 {
+  display: none;
+}
+
+.box10:hover {
+  padding: 10px;
+  transform: scale(1.2);
+  transform: translateX(-40px);
+  background-color: rgb(255, 255, 255, 0.1);
+  .year10 {
+    display: block;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+}
+
+@keyframes move10 {
+  0% {
+    margin-left: 900px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  div {
+    width: 80%;
+  }
+
+  div p {
+    font-size: 25px;
+  }
+}
