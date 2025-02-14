@@ -1,3 +1,3 @@
-# Expending-Cards
+# Anat animation wen
 # See Live website
-https://expendingcard.netlify.app/
+https://anat-animation-app.netlify.app/
